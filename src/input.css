@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+/* Custom CSS */
+
+.br-2.animado {
+    opacity: 0;
+}
+
+.br-1.animado {
+    transform: rotate(45deg) translate(7px, 10px);
+    transform-origin: 0% 100%;
+}
+
+.br-3.animado {
+    transform: rotate(-45deg) translate(-6px, 7px);
+    transform-origin: 0% 100%;
+}
+

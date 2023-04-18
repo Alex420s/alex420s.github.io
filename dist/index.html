@@ -1,0 +1,152 @@
+<!DOCTYPE html >
+<html lang="en" class='dark'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex420s portfolio" />
+    <meta
+      name="keywords"
+      content="Alex420s,alexis hernandez garita,portfolio,backend developer"
+    />
+    <meta name="author" content="Alex420s" />
+    <meta name="google" content="notranslate" />
+
+    <!-- Open Graph meta tags are snippets of code that control how URLs are displayed when shared on social media. -->
+    <meta property="og:title" content="Alex420s, web developer" />
+    <!-- pendeinte agregar una imagen para redes sociales -->
+    <meta
+      property="og:image"
+      content="https://imgs.search.brave.com/zIoMXzGYYWFKn0fxoIdM8qFhU-c7I8Z4L7j7UOUDgEw/rs:fit:888:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4y/Z0M4aHIyMk9rMGlY/Yk5GSUdKa3pRSGFE/OSZwaWQ9QXBp"
+    />
+    <meta
+      property="og:description"
+      content="Hi I'm Alex420s and I would like to be a python developer :)  "
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MKKCX6SS8S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MKKCX6SS8S");
+    </script>    
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://kit.fontawesome.com/ee44b52c3b.js" defer crossorigin="anonymous"></script>
+    <script src="./app.js " defer></script>
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (
+          localStorage.getItem('color-theme') === 'dark' ||
+          (!('color-theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+    <title>Portfolio</title>
+
+</head>
+
+<body class="bg-amber-100 text-stone-900 dark:bg-blue-950 dark:text-cyan-50 font-serif ">
+    <header>
+        <!--   Barra de navegación  -->
+        <nav class="flex justify-between py-7 px-10  m-auto tracking-widest  text-lg font-bold 
+                    md:items-center">
+            <a href="" class="md:pr-10"><img src="./img/logo512.png" alt="django-logo" width="50"></a>
+            <div id="menu" class="bg-slate-50 p-7 dark:bg-slate-900 h-[380px] w-[320px] md:flex flex-col items-start justify-around rounded-lg text-dark dark:text-white
+                                    md:flex-row md:w-full md:py-0 md:h-[40px] md:bg-inherit 
+                                    md:dark:bg-blue-400 hidden">
+                <ul class="flex h-5/6 flex-col justify-around  md:flex-row md:justify-center w-full ">
+                    <li class="md:px-5 md:pt-1  hover:text-sky-600 "><a href="">About</a></li>
+                    <li class="md:px-5 md:pt-1 hover:text-sky-600 "><a href="">Projects</a></li>
+                    <li class="md:px-5 md:pt-1 hover:text-sky-600 "><a href="">Contact</a></li>
+                    <li class="md:px-5 md:pt-1 hover:text-sky-600 "><a href="">Cursos</a></li>
+                </ul>
+                <!-- Botón modo oscuro -->
+                <button id="darkButton" class="pt-2">
+                    <i class="fa-solid fa-circle-half-stroke text-2xl"></i> 
+                </button>
+                <!-- Botón menu hamburguesa -->
+            
+
+            </div>
+            <button id="menu-button" class="absolute top-10 right-12 md:hidden">
+                <span
+                  class="br-1 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+                ></span>
+                <span
+                  class="br-2 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+                ></span>
+                <span
+                  class="br-3 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+                ></span>
+            </button>
+            <!-- Fin del menu -->
+        </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="my-0 flex flex-col lg:flex-row lg:h-[850px]">
+        <article class="p-10 lg:w-[70%] lg:h-[500px] lg:self-center">
+          <h1 class="text-sky-600 dark:text-sky-300 text-2xl 
+          font-bold tracking-widest leading-10">Hola, soy</h1>
+          <p class="py-2 text-3xl font-bold text-slate-600 dark:text-slate-300" >Alex Hernández</p>
+          <p class="text-3xl font-bold text-slate-500 dark:text-slate-600">
+            JR. Python web developer
+          </p>
+          <p class="mt-5 text-lg ">
+            Me apasiona la tecnología y la programación.
+            Actualmente, estoy enfocado en crear contenido educativo
+            sobre Python y el desarrollo web.
+          </p>
+          <!-- REDES SOCIALES -->
+          <section class="py-6">
+            <a href="" class="pr-2 text-2xl hover:text-sky-600"><i class="fa-brands fa-twitter px-2"></i></a>
+            <a href="" class="pr-2 text-2xl hover:text-sky-600"><i class="fa-brands fa-instagram px-2"></i></a>
+            <a href="" class="pr-2 text-2xl hover:text-sky-600"><i class="fa-brands fa-linkedin px-2"></i></a>
+            <a href="" class="pr-2 text-2xl hover:text-sky-600"><i class="fa-brands fa-github px-2"></i></a>
+          </section>
+          <div>
+            <button class="border-2 rounder border-sky-500 p-4 w-[250px] text-lg 
+            tracking-widest hover:bg-sky-500 hover:dark:text-slate-900" >Contrátame</button>
+          </div>       
+        </article>
+          <!-- CONTENEDOR IMAGEN -->
+        <div class="my-10 w-full">
+          <div class="w-[290px] h-[320px] m-auto bg-[url('./img/0.jpg')] lg:bg-[url('./img/0.jpg')]
+            bg-cover rounded-lg lg:w-[100%] lg:h-[100%]   
+            lg:bg-center lg:bg-no-repeat lg:bg-[length:320px_400px] lg:rounded-3xl"></div>
+        </div>
+      </section>
+      <!-- Experiencia Laboral -->
+      <h2 class="text-3xl text-slate-700 dark:text-white font-bold
+      tracking-widest w-[85%] m-auto text-center pt-8">Experiencia Personal</h2>
+      <section class="my-12 flex flex-col w-[84%] 
+      m-auto lg:w-[87%] lg:my-28" id="jobSection">
+        <div class="flex justify-between lg:flex-col lg:w-[20%]">
+          <button class="border-b-2 hover:dark:bg-slate-700 w-full px-4 py-1"
+          type="button"
+          id="link1"
+          data-id="job1"
+          >React</button>
+          <button>Django</button>
+          <button>Python</button>
+          <button>TailwindCSS</button>
+        </div>
+      </section>
+    </main>
+</body>
+
+</html>
