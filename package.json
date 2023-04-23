@@ -1,5 +1,5 @@
 {
-  "homepage": "https://alex420s.github.io/dist/",
+  "homepage": "http://alex420s.github.io/dist ",
   "devDependencies": {
     "tailwindcss": "^3.3.1"
   },
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "builder": "tailwindcss -i ./src/input.css -o ./dist/output.css"
   },
