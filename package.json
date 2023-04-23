@@ -1,5 +1,22 @@
 {
+  "homepage": "https://alex420s.github.io/dist/",
   "devDependencies": {
     "tailwindcss": "^3.3.1"
-  }
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "builder": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "name": "alex420s.github.io",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
