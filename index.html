@@ -14,44 +14,67 @@
 <body>
     <main>
         <section class="home" id="home">
-            <article class="nav-container">
+            <article class="home-container">
                 <header>
-                    <div class="nav-content">
+                    <div class="nav-container">
                         <h2 class="nav-title">Alex Django</h2>
                         <nav>
                             <ul class="nav-links">
-                                <li class="nav-item"><a href="">HOME</a></lic>
+                                <li class="nav-item"><a href="#home">HOME</a></lic>
+                                <li class="nav-item"><a href="#about">ABOUT</a></li>
                                 <li class="nav-item"><a href="">PORTFOLIO</a></li>
-                                <li class="nav-item"><a href="">BLOG</a></li>
                                 <li class="nav-item"><a href="">CONTACT</a></li>
-                                <li class="nav-item"><a href="">ABOUT</a></li>
-
-                            </ul>
-
+                            </ul>   
+                            <section class="nav-social">
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </section>
+                            <!-- mobile -->
+                            <div class="hamburger">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            
                         </nav>
-                        <div>
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
                     </div>
                 </header>
 
 
-                <div class="presentacion">
+                <article class="home-section ">
                     <span>Hi, my name is</span>
                     <h1 class="home__title"> Alex Hernandez</h1>
                     <h3 class="home__based">I'm a web developer based in Mexico city, Mexico. </h3>
                     <p class="home__description">
-                    I have experience in building complex applications with modern technologies, focused on responsive
-                    design and performance.
+                        I have experience in building complex applications with modern technologies, focused on
+                        responsive
+                        design and performance.
                     </p>
-                </div>
+                    <a href="#portfolio" class="home-button">Projects</a>
+                </article>
             </article>
 
+        </section>
+        <section id="about">
+            <figure>
+                 <img src="./images/ALEX-icon.jpg" alt="Alex" class="profile-pic">
+            </figure>
+            <div class="about__text">
+                <p class="about__text-title">About me</p>
+                <h2 class="about__text-h2">Hello, I'm <span>Alex Hernandez</span></h2>
+                <h3 class="about__text-h3">Python Web Developer</h3>
+                <P class="about__text-p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nostrum, iste obcaecati eligendi aperiam in placeat eveniet iure eaque voluptas consectetur accusantium amet ipsa sed aliquid nam voluptatem exercitationem at.</P>
+                <button class="CV-btn" onclick="window.open('./assets/Alex-Hernandez_CV.pdf')">Download CV </button>
+                <button class="contact-btn" onclick="location.href='./#contact'">Contact</button>
+                <p>Technologies and Tools</p>
+                <div class="tools">
+                    <p class="tool"></p>
+                    <p class="tool"></p>
+                    <p class="tool"></p>
+                    <p class="tool"></p>
+                    <p class="tool"></p>
+                    <p class="tool"></p>
+                </div>
+            </div>
         </section>
     </main>
 
