@@ -171,6 +171,7 @@ figure{
     border-style: solid;
     border-radius: 30px;
     cursor: pointer;
+    margin: 10px 0;
 }
 .CV-btn:hover{
     background-color: #c26e78;
@@ -208,10 +209,28 @@ h2 > span {
     letter-spacing: 1px;
     color: #7f9cde;
 }
+.about__text-p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+    justify-content: left;
+}
+.tool-section{
+    font-size: 24px;
+    color: #022079;
+    margin-top: 15px;
+
+}
+h4{
+    color: #565656;
+    font-weight: 500;
+}
 .tools{
     display: flex;
     gap: 5px;
 }
+
 .tool{
     height: 40px;
     width: 40px;
