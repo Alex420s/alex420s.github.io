@@ -57,7 +57,7 @@ header >.nav-container{
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 3px;
     transition: .5s;
     font-size: xx-large;
 }
@@ -75,7 +75,7 @@ nav{
     align-items: center;
 }
 nav > .nav-social >a {
-    margin-right: 12px;
+    margin-right: 10px;
 }
 .nav-social > a:first-child{
     margin-left: 15px;
@@ -116,7 +116,6 @@ nav > .nav-social >a {
 }
 .home-section .home__based {
     font-size: 22px;
-    margin-bottom: px;
     text-align: left;
     max-width: 480px;
     color: #eba8b3;
@@ -144,6 +143,8 @@ nav > .nav-social >a {
 .home-button:hover{
     background-color: #c26e78;
 }
+
+
 /* ABOUT section */
 
 #about{
@@ -162,7 +163,7 @@ figure{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px auto;
+    margin: 40px auto;
 }
 
 .profile-pic{
@@ -187,6 +188,8 @@ figure{
     background-color: #c26e78;
     transition: .5s;
 }
+
+/* ABOUT section */
 
 .about__text-title{
     font-size: 22px;
@@ -239,7 +242,7 @@ h2 > span {
 }
 .tools{
     display: grid;
-    grid-template-columns: minmax(125px, 165px) minmax(125px, 165px) minmax(125px, 165px);
+    grid-template-columns: minmax(110px, 165px) minmax(110px, 165px) minmax(110px, 165px);
     
     
    
@@ -265,46 +268,60 @@ p.tool{
 }
 
 #services{
-    height: 70vh;
+    height: 60vh;
     background-color: #e7e7e7;
-    padding: 80px 40px;
+    
+    padding: 0 40px;
 }
 #services h2{
     text-align: center;
     font-size: xx-large;
     color: #022079;
-    margin-bottom: 70px;
+    padding: 50px 0 0 0;
+    letter-spacing: 2px;
+    line-height: 1;
+   
 }
 #services .row{
     
-    display: flex;
-    width: 750px;
-    gap: 40px;
-    margin: 40px auto;
-    
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 3rem;    
 }
 #services .read{
     display: none;
-}
 
-@media (max-width: 700px) {
-    .about__text-title{
-        display: flex;
-        position: relative;
-        margin-left: 110px;
-    }
-    .CV-btn , .contact-btn{
-        padding: 15px 25px;
-        background-color: #b7c4ec;
-        border-style: solid;
-        border-radius: 30px;
-        cursor: pointer;
-        margin-left: 40px;
-        
-        
-    }
 }
+#services .read-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background:  #b7c4ecb6;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all .45s ease;
+
+
+    
+}
+#services .service{
+    background-color: #e2d1d1;
+    padding: 35px 45px;
+    border-radius: 8px;
+   
+}
+#services .service h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#services .service p{
+    line-height: 1.8;
+    font-size: 1rem;
+} 
+
 
 
 @media (max-width: 890px){
@@ -312,11 +329,17 @@ p.tool{
     nav > .nav-links{
         display: none;
     }
-    
-    .hamburger{
-        padding: 0 7px 0 0;
-        display: block;
+        /* NAv-SOCIAL */
+    .nav-social{
+        font-size: x-large;
     }
+    .hamburger{
+        font-size: x-large;
+        display: inline;
+        margin: 0 0 0 25px;
+    }
+
+    
     .home{
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url("../images/home-mobile.jpg");
         background-size: cover;
@@ -325,8 +348,8 @@ p.tool{
     
     .home-section span {
         position: relative;
-        top: 100px;
-        
+        top: 80px;
+        letter-spacing: 4px;
         color: rgb(236, 96, 127);
         font-size: 22px;
     }
@@ -340,56 +363,94 @@ p.tool{
     .home-section .home__based{
         color: rgb(178, 168, 233);
         font-size: 20px;
-        width: 340px;
+        width: 300px;
        
         
         
     }
     .home-section .home__description{
-        max-width: 400px;
+        max-width: 300px;
         word-wrap: none;
         color: #879ad4;
         font-size: 20px;
-        margin: 20px 0 45px 40px;
-        font-size: 18px;
+        margin: 20px 0px;
+        font-size: 16px;
         
         
+    }
+    .home-button{
+        margin-top: 40px;
     }
     /* About */
     #about{
         grid-auto-flow: row;
         align-items: center;
         justify-content: center;
-        min-width: 430px;
-        margin: 0 10px;
+        min-width: 300px;
+        margin: 0 20px;
     }
-    .about__text-title{
-        margin: 0 auto;
+    h2 > span {
+        color: #ca4c5b;
+        display: inline-block;
     }
     .profile-pic{
-        width: 170px;
-        padding: 14px;
-        
+        justify-content: center;
+        max-width: 240px;
     }
     figure{
-        max-width: 330px;
-       justify-content: center;
-       padding: 0px 0;
-        
+        margin: 15px auto;
     }
     
+    .about__text-title{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .about__text-p{
+        font-size: 15px;
+        line-height: 25px;
+        justify-content: left;
+        max-width: 300px;
+    }
     /* tool section */
+    .tool-section{
+        min-width: 300px;
+        font-size: 24px;
+        color: #022079;
+        margin-top: 10px;
+        
+    
+    }
     p.tool{
         height: 30px;
-        width: 90px;
+        width: 80px;
        
         font-size: small;
         
     }
+    .h4{
+        width: 300px;
+    }
     .tool img {
-        height: 85%;
-        margin-right: 9px;
+        height: 80%;
+        margin-right: 5px;
         
     }
-    
+    #services{
+        height: 150vh;
+        background-color: #e7e7e7;
+        padding: 0px 30px;
+    }
+    #services h2{
+        text-align: center;
+        font-size: xx-large;
+        color: #022079;
+        margin-bottom: 50px;
+    }
+    #services .row{
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: #e7e7e7;
+    }
+
 }
