@@ -1,4 +1,3 @@
-
    
 const timeToday = () =>{
     // Get te current localTime
@@ -6,7 +5,7 @@ const timeToday = () =>{
     document.querySelector(".about__text-p span").innerHTML = today;
 };
 
-timeToday()
+timeToday();
 
 //Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
 function seleccionar(link) {
@@ -30,4 +29,4 @@ function responsiveMenu() {
     } else {
         x.className = "";
     }
-}
+};

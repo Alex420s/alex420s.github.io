@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex portfolio</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="js/"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,13 +26,13 @@
                                 <li class="nav-item"><a href="#about" onclick="seleccionar(this)">ABOUT</a></li>
                                 <li class="nav-item"><a href="#services" onclick="seleccionar(this)">SERVICES</a></lic>
                                 <li class="nav-item"><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                                <li class="nav-item"><a href="#cotact" onclick="seleccionar(this)">CONTACT</a></li>
+                                <li class="nav-item"><a href="#about" onclick="seleccionar(this)">CONTACT</a></li>
                             </ul>
                         </nav>   
                         <section class="nav-social">
                             <a href="https://www.linkedin.com/in/alexisgarita/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://www.instagram.com/alex420.s/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@alex420s/ "><i class="fa-brands fa-youtube"></i></a>
+                             <a href="https://www.youtube.com/@alex420s/ "><i class="fa-brands fa-youtube"></i></a>
                         </section>
                         <!-- mobile -->
                         <div  id="mobile-menu" class="hamburger" onclick="responsiveMenu()" >
@@ -67,11 +68,13 @@
                 <p class="about__text-title">About me</p>
                 <h2 class="about__text-h2">Hello, I'm <span>Alex Hernandez</span></h2>
                 <h3 class="about__text-h3">Python Web Developer</h3>
-                <P class="about__text-p">Hi, I'm a self-taught web developer focused on the baackend development.
+                <P class="about__text-p">Hi, I'm a self-taught web developer focused on the backend development.
                     The current date is: <span>23</span>
                 </P>
                 <button class="CV-btn" onclick="window.open('./assets/Alex-Hernandez_CV.pdf')">Download CV </button>
-                <button class="contact-btn" onclick="location.href='./#contact'">Contact</button>
+                <!-- <button class="contact-btn" onclick="location.href='./#contact'">Contact</button> -->
+                <p>Hi, ths is my linkedin Profile.<div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="alexisgarita" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://mx.linkedin.com/in/alexisgarita/es?trk=profile-badge">Edgar Alexis Hernandez Garita</a></div>
+                </p>
             
                 <!-- Tools section  -->
                 <div class="tool-box">
@@ -155,39 +158,40 @@
     <!-- PORTFOLIO -->
     <section class="portfolio" id="portfolio">
         <header>
-            <h2>Portfolio</h2>
+            <h2 id="title-inner">Portfolio</h2>
             <p>Latest Projects</p>
         </header>
         
         <article class="row-box">
             <div class="project">
-                <img src="./images/project.jpg" alt="Project image">
+                <img src="./images/marketplace.jpg" alt="Marketplace">
                 <div class="hidden">
-                    <h2>Django Ecommerce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum dicta natus tenetur laudantium, 
+                    <h2>Tienda Iman</h2>
+                    <p>Django, Postgresql, TailwindCSS and project deployed to Vercel.
                     </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://tienda-iman.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./images/Google-clone.png" alt="Google clone">
+                <div class="hidden">
+                    <h2>Google clone</h2>
+                    <p>A Google clone project, using HTML5 and 
+                        CSS   display: Grid and display: Flex
+                    </p>
+                    <a href="https://alex420s.github.io/Google-clone/"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="project">
                 <img src="./images/project.jpg" alt="Project image">
                 <div class="hidden">
                     <h2>Django Ecommerce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <p> 
                     </p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="project">
-                <img src="./images/project.jpg" alt="Project image">
-                <div class="hidden">
-                    <h2>Django Ecommerce</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="project">
+            <!-- <div class="project">
                 <img src="./images/project.jpg" alt="Project image">
                 <div class="hidden">
                     <h2>Django Ecommerce</h2>
@@ -213,14 +217,18 @@
                     </p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
-            </div>
+            </div> -->
         </article>
-    </section>
-    <!-- FOOTER -->
-    <footer>
-        <p>Todos los derechos reservados <span><a href="https://github.com/Alex420s/portfolio">ALEX420s</a></span> - 2023</p>
+        <div>
+            <footer>
+                <h6>Todos los derechos reservados <span><a href="https://github.com/Alex420s/portfolio">ALEX420s</a></span> - 2023</h6>
 
-    </footer>
+            </footer>
+        </div>
+    </section>
+    <!-- Linkedin -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    
     <script src="./js/index.js"></script>
 </body>
 

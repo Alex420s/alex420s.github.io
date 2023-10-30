@@ -191,10 +191,10 @@ figure{
     background-color: #c26e78;
     transition: .5s;
 }
-.contact-btn:hover{
+/* .contact-btn:hover{
     background-color: #c26e78;
     transition: .5s;
-}
+} */
 
 /* ABOUT section */
 
@@ -385,11 +385,16 @@ li span img{
     gap: 2.5rem;
     padding: 50px;
     
+    
+}
+.LI-profile-badge a, a:visited{
+    list-style: none;
+    text-decoration: none;
+    
 }
 
-
 .portfolio .project{
-    padding: 0px 10px;
+    margin-bottom: 15px;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -405,7 +410,7 @@ li span img{
 }
 .portfolio article .project .hidden {
     
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3), rgb(255, 0, 79, 0.3), rgb(255, 0, 79, 0.8));
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(73, 116, 185, 0.5 ), rgba(73, 116, 185, 0.7), rgba(67, 113, 199, 0.8));
     position: absolute;
     width: 100%;
     height: 0;
@@ -424,7 +429,7 @@ li span img{
 }
 .portfolio article .project .hidden h2{
     font-size: 20px;
-    font-size: 600;
+    font-weight: 600;
     margin-bottom: 15px;
     color: #e43247;
     
@@ -448,18 +453,19 @@ li span img{
     border-radius: 8px;
 }
 .portfolio .row-box .project:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    opacity: 0.5;
 }
 .portfolio .row-box .project:hover .hidden {
     height: 100%;
 }
 footer {
-    position: relative;
+    
     background-color: #90a5e3;
     color: #fff;
     text-align: center;
+    
     padding: 25px 0;
-    margin-top: 20px;
     font-weight: 400;
     font-size: 1.5rem;
 }
@@ -469,6 +475,7 @@ footer a, footer a:visited {
     color: #022079;
     font-weight: 400;
     font-size: 1.5rem;
+    
     
 }
 @media (max-width: 890px){
@@ -600,15 +607,17 @@ footer a, footer a:visited {
         
     }
     #services{
-        height: 150vh;
+        height: 100%;
         background-color: #e7e7e7;
-        padding: 0px 30px;
+        padding: 15px 30px;
     }
     #services h2{
         text-align: center;
         font-size: xx-large;
         color: #022079;
         margin-bottom: 50px;
+        padding: 50px 0 0 0;
+         
     }
     #services .row{
         grid-auto-flow: row;
@@ -624,18 +633,45 @@ footer a, footer a:visited {
         grid-auto-flow: column;
         align-items: center;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 2rem;
        
-        margin: 20px auto;
+        
         
     }
     .portfolio article .project {
 
-        min-width: 280px;
+        min-width: 330px;
         max-width: 390px;
         justify-content: center;
         align-items: center;
-        padding:  20px;
+
         
+    }
+    .portfolio article .project .hidden h2{
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 20px;
+        color: #fff;
+        margin: 0 ;
+        
+    }
+    .portfolio article .project .hidden p{
+        text-align: left;
+        width: 270px; 
+        font-size: 1rem;
+        color: #eabda5 ;
+        line-height: normal;
+        font-weight: bolder;
+    }
+    .portfolio article .project .hidden i {
+        font-size: 1.3rem;
+        color: #022079;
+        background-color: #b7c4ec;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
     }
 }
